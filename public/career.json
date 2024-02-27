@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1,
+      "jobName": "Full-time",
+      "jobTitle": "Lead Developer",
+      "companyName": "Tech Innovators Inc.",
+      "jobSalary": 120000,
+      "jobPublishDate": "2023-05-15T08:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "jobName": "Part-time",
+      "jobTitle": "Front-end Developer",
+      "companyName": "Web Wizards Ltd.",
+      "jobSalary": 80000,
+      "jobPublishDate": "2023-04-22T14:45:00.000Z"
+    },
+    {
+      "id": 3,
+      "jobName": "Contract",
+      "jobTitle": "Data Scientist",
+      "companyName": "AI Insights Co.",
+      "jobSalary": 130000,
+      "jobPublishDate": "2023-03-10T11:15:00.000Z"
+    },
+    {
+      "id": 4,
+      "jobName": "Internship",
+      "jobTitle": "Software Engineer Intern",
+      "companyName": "CodeCrafters Ltd.",
+      "jobSalary": 50000,
+      "jobPublishDate": "2023-02-05T09:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "jobName": "Full-time",
+      "jobTitle": "UX/UI Designer",
+      "companyName": "Creative Designs Co.",
+      "jobSalary": 100000,
+      "jobPublishDate": "2023-01-18T16:30:00.000Z"
+    },
+    {
+      "id": 6,
+      "jobName": "Part-time",
+      "jobTitle": "Marketing Specialist",
+      "companyName": "Market Trends Inc.",
+      "jobSalary": 75000,
+      "jobPublishDate": "2022-12-02T13:20:00.000Z"
+    },
+    {
+      "id": 7,
+      "jobName": "Full-time",
+      "jobTitle": "DevOps Engineer",
+      "companyName": "Cloud Solutions Ltd.",
+      "jobSalary": 110000,
+      "jobPublishDate": "2022-11-12T10:10:00.000Z"
+    },
+    {
+      "id": 8,
+      "jobName": "Contract",
+      "jobTitle": "Cybersecurity Analyst",
+      "companyName": "Secure Networks Co.",
+      "jobSalary": 140000,
+      "jobPublishDate": "2022-10-25T12:45:00.000Z"
+    },
+    {
+      "id": 9,
+      "jobName": "Internship",
+      "jobTitle": "IT Support Intern",
+      "companyName": "TechCareers Ltd.",
+      "jobSalary": 55000,
+      "jobPublishDate": "2022-09-08T15:15:00.000Z"
+    },
+    {
+      "id": 10,
+      "jobName": "Full-time",
+      "jobTitle": "Product Manager",
+      "companyName": "Innovate Solutions Inc.",
+      "jobSalary": 125000,
+      "jobPublishDate": "2022-08-01T17:30:00.000Z"
+    },
+    {
+      "id": 11,
+      "jobName": "Part-time",
+      "jobTitle": "Graphic Designer",
+      "companyName": "Artistic Creations Co.",
+      "jobSalary": 70000,
+      "jobPublishDate": "2022-07-14T14:00:00.000Z"
+    },
+    {
+      "id": 12,
+      "jobName": "Full-time",
+      "jobTitle": "Systems Analyst",
+      "companyName": "Tech Solutions Ltd.",
+      "jobSalary": 115000,
+      "jobPublishDate": "2022-06-27T11:45:00.000Z"
+    }
+  ]
+  
