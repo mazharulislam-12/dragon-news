@@ -1,7 +1,8 @@
-import { FaBookmark, FaShare, FaStar, FaStreetView } from "react-icons/fa";
+import { FaBookmark, FaShare, FaStar, FaStreetView,  } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const NewsCard = ({ news }) => {
-    const { title, rating, total_view, author, thumbnail_url, image_url, details } = news;
+    const { title, rating, total_view, author, thumbnail_url, image_url, details, _id } = news;
     return (
         <div className="card p-4  bg-base-100 shadow-xl mb-10">
 
@@ -24,7 +25,15 @@ const NewsCard = ({ news }) => {
 
             <h2 className="card-title mt-5">{title}</h2>
             <figure><img src={image_url} className="w-full" alt="img" /></figure>
-            <p>{details}</p>
+
+            {
+                details.length > 200
+                    ? <p>{details.slice(0, 200)} <Link
+                        to={`/news/${_id}`}
+                        className="text-red-500">Read More</Link> </p>
+                    : <p>{details}</p>
+            }
+
 
             <div className="flex items-center justify-between">
                 <div className="flex items-center">
