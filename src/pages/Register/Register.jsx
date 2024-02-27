@@ -68,7 +68,7 @@ const Register = () => {
                         <button className="btn bg-[#403F3F] text-white hover:text-black">Register</button>
                     </div>
                 </form>
-                <p className="text-center -mt-3">Already? have an account <Link className="text-[#F75B5F]" to='/login'>LoginP</Link> </p>
+                <p className="text-center -mt-3">Already? have an account <Link className="text-[#F75B5F]" to='/login'>Login</Link> </p>
             </div>
         </div>
     );
