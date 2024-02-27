@@ -11,17 +11,23 @@ const AuthProviders = ({children}) => {
     
     const [user,setUser] = useState(null);
 
+    // loading
+    const [loading, setLoading] = useState(true)
+
     const crateUser = (email, password) =>{
+        setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     } 
 
     //sign in
     const signIn = (email, password) =>{
+        setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
 
     // sign out
     const logOut = () =>{
+        setLoading(true)
         return signOut(auth)
     }
 
@@ -29,7 +35,8 @@ const AuthProviders = ({children}) => {
     useEffect(()=>{
         const unSubscribe =  onAuthStateChanged(auth, currentUser =>{
             console.log('user in the auth state change', currentUser);
-            setUser(currentUser)
+            setUser(currentUser);
+            setLoading(true)
         })
         return () =>{
             unSubscribe();
@@ -38,6 +45,7 @@ const AuthProviders = ({children}) => {
 
     const authInfo = {
         user,
+        loading,
         crateUser,
         signIn,
         logOut
