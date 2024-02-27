@@ -14,10 +14,10 @@ const Navbar = () => {
     }
 
     const navLinks = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/about'>About</NavLink></li>
-        <li><NavLink to='/career'>Career</NavLink></li>
-        <li><NavLink to='/login'>Login</NavLink></li>
+        <li className='text-lg'><NavLink to='/'>Home</NavLink></li>
+        <li className='text-lg'><NavLink to='/blogs'>Blogs</NavLink></li>
+        <li className='text-lg'><NavLink to='/career'>Career</NavLink></li>
+        <li className='text-lg'><NavLink to='/login'>Login</NavLink></li>
 
 
     </>
