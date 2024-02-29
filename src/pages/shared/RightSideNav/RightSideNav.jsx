@@ -5,13 +5,16 @@ import qZone2 from '../../../assets/qZone2.png'
 import qZone3 from '../../../assets/qZone3.png'
 
 const RightSideNav = () => {
+
+    
+
     return (
         <div>
 
             <div className='p-4 space-y-3 mb-6'>
                 <h2 className='text-3xl font-medium'>Login With</h2>
 
-                <button className="btn gap-4 ">
+                <button onClick={handleGoogleSignIn} className="btn gap-4 ">
                 <FaGoogle />
                     Login With Google
                 </button>

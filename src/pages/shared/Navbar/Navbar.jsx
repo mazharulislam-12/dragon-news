@@ -14,10 +14,10 @@ const Navbar = () => {
     }
 
     const navLinks = <>
-        <li className='text-lg'><NavLink to='/'>Home</NavLink></li>
-        <li className='text-lg'><NavLink to='/blogs'>Blogs</NavLink></li>
-        <li className='text-lg'><NavLink to='/career'>Career</NavLink></li>
-        <li className='text-lg'><NavLink to='/login'>Login</NavLink></li>
+        <li className='text-lg no-underline'><NavLink style={{textDecoration:'none'}} to='/'>Home</NavLink></li>
+        <li className='text-lg'><NavLink style={{textDecoration:'none'}} to='/blogs'>Blogs</NavLink></li>
+        <li className='text-lg'><NavLink style={{textDecoration:'none'}} to='/career'>Career</NavLink></li>
+        <li className='text-lg'><NavLink style={{textDecoration:'none'}} to='/login'>Login</NavLink></li>
 
 
     </>
