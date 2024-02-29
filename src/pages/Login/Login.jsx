@@ -2,13 +2,16 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../shared/Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
+import { FaGoogle } from "react-icons/fa";
+import app from "../../firebase/firebase.config";
+import {getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const Login = () => {
 
     const { signIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
-    console.log('location in the login page',location);
+    console.log('location in the login page', location);
 
 
     const handleLogin = e => {
@@ -28,6 +31,22 @@ const Login = () => {
             .catch(error => {
                 console.log(error);
             })
+    };
+
+
+    // google login code 
+    const auth = getAuth(app)
+    const provider = new GoogleAuthProvider();
+
+    const handleGoogleSignIn = () =>{
+        signInWithPopup(auth, provider)
+        .then(result => {
+            const user = user.result;
+            console.log(user);
+        })
+        .catch(error => {
+            console.log(error);
+        });
     }
 
 
@@ -56,6 +75,14 @@ const Login = () => {
                     <div className="form-control mt-6">
                         <button className="btn bg-[#403F3F] text-white ">Login</button>
                     </div>
+
+
+                    {/* google login btn */}
+                    <div className="text-center mt-5">
+                        <p>or use one of these options</p>
+                        <FaGoogle onClick={handleGoogleSignIn}  className="text-2xl cursor-pointer "></FaGoogle>
+                    </div>
+
                 </form>
                 <p className="text-center -mt-3">Don't have an account <Link className="text-[#F75B5F]" to='/register'>Register</Link> </p>
             </div>
